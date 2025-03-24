@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="text-center">Star Wars <span id="word"></span></h1>
+        <nav>
+          <button id="movies-tab" aria-label="Movies Tab">Movies</button>
+          <button id="characters-tab" aria-label="Characters Tab">
+            Characters
+          </button>
+        </nav>
+      </header>
+
+      <!-- data container -->
+      <div class="tab-content" id="movies" style="display: none">
+        <div class="loading" id="loading-movies" style="display: none">
+          <p>Loading...</p>
+        </div>
+        <div class="movies-container" id="movies-list"></div>
+        <!-- movies data -->
+      </div>
+
+      <div class="tab-content" id="characters" style="display: none">
+        <div class="loading" id="loading-characters" style="display: none">
+          <p>Loading...</p>
+        </div>
+        <!-- <h2>Characters</h2> -->
+        <div class="characters-container" id="characters-list"></div>
+        <!-- characters data -->
+      </div>
+
+      <footer>
+        <p class="text-center">Data fetched from SWAPI</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <!-- javascrtipt -->
+  </body>
+</html>

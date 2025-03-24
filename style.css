@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+
+.tab-content {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.movies-container,
+.characters-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.film,
+.character {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.film h3,
+.character h3 {
+  min-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-content: center;
+}
+
+.film-cover,
+.character img {
+  width: 200px;
+  height: 320px;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: cornflowerblue;
+}
+
+button.show-more-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button.show-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.text-center {
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.info {
+  text-align: left;
+}
+
+.loading {
+  font-size: 20px;
+  color: #007bff;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
