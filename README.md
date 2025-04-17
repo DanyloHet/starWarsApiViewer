@@ -1,6 +1,6 @@
 # Star Wars API Viewer
 
-This project is a web application that fetches and displays data about **Star Wars movies** and **characters** from the [Star Wars API (SWAPI)](https://swapi.dev/). The application allows users to switch between tabs to view a list of movies and characters, along with additional details such as descriptions and personal information.
+This project is a web application that fetches and displays data about **Star Wars movies** and **characters** from the [Star Wars API (SWAPI)](https://www.swapi.tech/). The application allows users to switch between tabs to view a list of movies and characters, along with additional details such as descriptions and personal information.
 
 ## Features
 
