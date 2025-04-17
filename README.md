@@ -58,9 +58,9 @@ The project consists of the following files:
 
 
 ## API Endpoints Used
-1. Movies: https://swapi.dev/api/films/
+1. Movies: https://www.swapi.tech/api/films
 
-Characters: https://swapi.dev/api/people/
+Characters: https://www.swapi.tech/api/people
 
 
 ## Known Issues
